@@ -1,0 +1,163 @@
+.page-title {
+  height: 20px;
+  line-height: 20px;
+  border-left: 4px solid #8794AE;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.document-main {
+  .ivu-form-item {
+    margin-bottom: 24px;
+
+    .ivu-form-item-label {
+      font-size: 16px;
+      padding-bottom: 16px;
+    }
+
+    .ivu-input {
+      height: 42px;
+    }
+    .ivu-select-selection, .ivu-select-placeholder, .ivu-select-selected-value {
+      height: 42px;
+      line-height: 42px;
+    }
+    .el-upload {
+      width: 100%;
+    }
+
+    .download-template {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: -36px
+    }
+
+    .document-textarea {
+      .ivu-input {
+        min-height: 134px;
+      }
+    }
+  }
+
+  .editor-container {
+    .tui-editor-defaultUI {
+      border: none;
+
+      .te-toolbar-section {
+        border: none;
+      }
+
+      .te-tab {
+        margin: 0;
+      }
+
+      .te-tab button {
+        font-size: 14px;
+        background-color: transparent;
+        border: none;
+        color: #9896BE;
+      }
+
+      .tui-editor-defaultUI-toolbar {
+        width: 50px;
+        float: right;
+
+        .tui-toolbar-icons {
+          color: #3B3783;
+        }
+        .tui-editor-defaultUI-toolbar {
+          width: 500px;
+        }
+      }
+
+      .te-tab button.te-tab-active {
+        color: #3B3783;
+      }
+
+      .te-editor-section {
+        margin-top: 10px;
+        border-radius: 4px;
+        background-color: #F9F9FC;
+        padding: 20px 20px 20px 0 ;
+
+        .tui-editor {
+          width: calc(100% - 20px);
+          height: calc(100% - 40px);
+        }
+      }
+
+      .te-md-splitter {
+        border-left: none;
+      }
+
+      .CodeMirror {
+        background-color: #F9F9FC;
+      }
+
+      .CodeMirror-vscrollbar, .te-preview {
+        &::-webkit-scrollbar {
+          width: 4px;
+          /*height: 4px;*/
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 5px #3B3783;
+          background: #3B3783;
+        }
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 5px #F2F2F2;
+          border-radius: 0;
+          background: #F2F2F2;
+        }
+      }
+    }
+  }
+}
+.detail-container {
+  padding: 0 15px;
+  line-height: 20px;
+
+  .test-title {
+    font-size: 12px;
+    color: #8794AE;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+/* 预览和文件显示样式 */
+.file-preview {
+  .tui-editor-defaultUI {
+    border: none;
+  }
+  .te-preview {
+    padding: 0 15px;
+  }
+  .CodeMirror {
+    display: none!important;
+  }
+  .te-toolbar-section {
+    display: none;
+  }
+  .te-md-splitter {
+    border-color: #fff;
+  }
+
+  .te-preview {
+    &::-webkit-scrollbar {
+      width: 4px;
+      /*height: 4px;*/
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 5px #3B3783;
+      background: #3B3783;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 5px #F2F2F2;
+      border-radius: 0;
+      background: #F2F2F2;
+    }
+  }
+}

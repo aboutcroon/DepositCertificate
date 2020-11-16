@@ -1,0 +1,25 @@
+/*设置head部分文字与矩形*/
+.container {
+  display: flex;
+  align-items: center;
+}
+.rectangle {
+  width: 4px;
+  height: 20px;
+  background: rgba(135,148,174,1);
+}
+
+.cm-s-rubyblue.CodeMirror {   /*CodeMirror右侧背景*/
+  background-color: #EEF0F4;
+  color: #1D2346;
+}
+.cm-s-rubyblue .CodeMirror-gutters {    /*CodeMirror左侧栏背景及分割线*/
+  background: #EEF0F4;
+  border-right: 1px solid #C5C5C5;
+}
+.cm-s-rubyblue .CodeMirror-linenumber {   /*CodeMirror左侧栏数字颜色*/
+  color: #1D2346;
+}
+.CodeMirror.cm-s-rubyblue {   /*CodeMirror圆角边框*/
+  border-radius: 8px;
+}
